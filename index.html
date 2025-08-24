@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+    </header> 
+    <div class="container">
+      <aside>
+         
+        <a href="todo.html"><button class="aside-btn">All todo list</button></a>
+        <a href="notes.html"><button class="aside-btn">Notes</button></a>
+        <a href="yourday.html"><button class="aside-btn">Your day</button></a>
+        <a href="calendar.html"><button class="aside-btn">Calendar</button></a>
+        
+     </aside>
+    <section >
+     <div class="todo">  
+        <h2 style= "margin-bottom:10px; font-size:40px;color:rgb(90, 66, 66); font-family: 'Courier New', Courier, monospace;">My Todo List</h2>
+        <div class="input" >
+          <input type="text" class="input-field" id="todoInput" placeholder="Enter New Task">
+          <button class="btn">Add</button>
+        </div>
+        <ul class="custom-scroll">
+            <li id="todoList"></li>
+        </ul>
+        <div style="width: 90%;">
+            <hr class="counter"/>
+        <div class="counter-container">
+            <p><span id="todoCount">0</span> Items</p>
+            <button id="dltBtn">Delete All</button>
+        </div>
+     
+    </div> 
+    </section>
+  
+</div>
+</body>
+<script src="index.js"></script>
+</html>
+

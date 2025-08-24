@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All To-Do Lists</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+
+  <button class="home-btn" onclick="window.location.href='index.html'">Home</button>
+
+  <h2>All TO-DO LISTS</h2>
+
+  <div class="filter-options">
+    <div class="task" id="allContainer">
+      <button id="showAll">All</button>
+    </div>
+    <div class="task" id="completedContainer">
+      <button id="showCompleted">Completed</button>
+    </div>
+    <div class="task" id="pendingContainer">
+      <button id="showPending">Pending</button>
+    </div>
+  </div>
+
+  <button class="back-btn" id="backBtn">Back</button>
+
+  <script src="todo.js"></script>
+</body>
+</html>

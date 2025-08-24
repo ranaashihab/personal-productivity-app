@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+
+   <div class="search-section">
+        <input type="text" class="search-note" id="search" placeholder="Search notes...">
+    </div>
+
+    <div class="note-content">
+        <div class="note-container">
+            <h1 style="font-family: 'Courier New', Courier, monospace; color: rgb(83, 62, 62); font-size:60px;">
+                NOTES
+            </h1>
+            <textarea id="input" class="note-input" placeholder="Write your note here..."></textarea>
+            <button class="save-note-btn" id="save">Save</button>
+            <button class="clear-note-btn" id="clear">Clear All</button>
+        </div>
+
+        <ul class="saved-notes-list" id="note-list">
+            <h4 style="margin-left:0px; font-size: larger; font-family:'Times New Roman', Times, serif; color: rgb(83, 62, 62);">
+                ALL NOTES
+            </h4>
+        </ul>
+    </div>
+    <button id="back-btn" class="back-button">Back Home</button>
+
+
+    <script src="notes.js"></script>
+
+</body>
+</html>

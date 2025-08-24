@@ -1,0 +1,356 @@
+body{
+background-color:#dfd0c2;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.home{
+   color: beige;
+    background-color: rgb(139, 97, 97);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    color: rgb(53, 45, 45);
+}
+.header{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#quote{
+    flex: 2;
+    height: 80px;
+    background-color: #332b2b;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#myquote{
+    font-family:'Times New Roman', Times, serif;
+    color :beige;
+    text-align: center;
+    font-size:25px;
+}
+#date{  
+        
+        width: 30%;
+        height: 80px;
+        background-color: #332b2b;
+        border-radius: 10px;
+        color :beige;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+}
+.main{
+    margin-top:15px;
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.goal, .reflection, .habitTracker {
+    flex: 1 1 300px;       
+    min-width: 250px;      
+    height: 320px;         
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color:rgb(157, 140, 140);
+    border:2px solid rgb(124, 99, 99);
+    margin: 10px;          
+    display: flex;
+    flex-direction: column
+}
+
+.goal{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goal1{
+
+    align-items: center;
+    display: flex;
+    width:100%;
+    position: relative;
+
+}
+
+#goalInput {
+    flex: 1;
+    padding: 10px;
+    padding-right:60px ;
+     border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+    overflow-wrap: break-word;
+}
+
+#goalSave{
+    border-radius: 5px;
+    height: 30px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    background-color: #adb3ad;
+    color: rgb(243, 243, 243);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+#goalSave:hover {
+    background-color: #528654;
+}
+ .goal2{
+    display: flex;
+    align-items: center;
+
+}
+#goalCheckbox {
+  appearance: none;            
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border: 2px solid #555;
+  border-radius:2px;         
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background: #d2c8c8;
+  transition: all 0.2s ease;
+  color: #555;
+}
+#goalCheckbox:checked {
+  background-color: #c4bbae;
+  border-color: #ced0ce;
+}
+#goalCheckbox:checked::after {
+  content: "✔";
+  color: rgb(94, 76, 76);
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+#myGoal {
+    font-size: 25px;
+    color: rgb(66, 53, 53);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.reflection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border:px solid rgb(124, 99, 99);
+}
+
+#reflectionInput{
+    flex: 1;
+    width: 100%; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: beige;
+    font-size: 3vh;
+}
+
+textarea::placeholder{
+    padding:5px 10px;
+    font-size: 20px;
+    color: #adb3ad;
+}
+.clear{
+    color: beige;
+    background-color: rgb(85, 53, 53);
+    border: none;
+    padding:6px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.save {
+    color: beige;
+    background-color: green;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 15px;
+    right: 60px; 
+    cursor: pointer;
+}
+.save:hover {
+    background-color: darkgreen;
+}
+
+.past-reflections {
+   border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(212, 203, 203);
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.past-reflections h3 {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(53, 45, 45);
+}
+
+.reflection-entry:last-child {
+    border-bottom: none;
+}
+
+.reflection-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: darkslategray;
+}
+.delete-btn {
+    background: none; 
+    color: rgb(207, 128, 128);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.delete-btn:hover {
+    color: rgb(165, 165, 165); 
+    transform: scale(1.2); 
+}
+
+.reflection-entry {
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: rgb(210, 210, 210);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: rgb(107, 67, 67);
+}
+.habitInputContainer{
+    display: flex;
+    
+}
+
+.habitTracker{
+    
+    padding: 10px;
+
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 12px;
+    background: rgb(234, 234, 229);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+#habitInput{
+     width: 90%;  
+     height: 30px;     
+    padding: 10px;
+    box-sizing: border-box;  
+    border: 1px solid rgb(100, 58, 58);
+    border-radius: 3px;
+}
+
+.habit-item span {
+
+    flex-grow: 1;
+}
+#habitList {
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    padding:5px;
+    padding-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+   
+}
+#habitList:empty {
+    display: none; 
+}
+
+#habitList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#habitList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+#habitList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#addHabit{
+    border-radius: 5px;
+    height: 30px;
+    background-color: #adb3ad;
+    color: rgb(243, 243, 243);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+#addHabit:hover {
+    background-color: #62bc65;
+}
+.habit-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(215, 174, 166);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.delete-btn {
+  color: rgb(104, 101, 101);
+}

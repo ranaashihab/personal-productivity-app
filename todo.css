@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#dfd0c2;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  h2 {
+    color: rgb(238, 224, 224);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  
+  .filter-options {
+    display: flex;
+  
+  }
+  
+  .task {
+    margin: auto;
+    width: 30%;
+    border: 2px solid rgb(26, 8, 8);
+    height: 450px;
+    border-radius: 10px;
+  }
+  
+  .filter-options button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ac9c8c;
+    color: white;
+    border-radius: 10px;
+    width: 98%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .filter-options button:hover {
+    background: #756c68;
+  }
+  
+  .task-item {
+    background:beige;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border: 2px solid #4e3b28;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: rgb(46, 32, 32);
+    text-decoration-color: rgb(153, 40, 11);
+  }
+  
+  .back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #716c67;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .back-btn:hover {
+    background: #6c5247;
+  }
+  
+  .home-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background: #ac9c8c;
+    color: rgb(63, 52, 52);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .home-btn:hover {
+    background: #756c68;
+  }
+  
