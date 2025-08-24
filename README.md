@@ -32,7 +32,7 @@ All data is saved in the browser using **localStorage**, so it stays even after 
 - 📝 Write and save **Daily Reflections** (with history)  
 - 📊 Track your **Habits** (add, mark as done, delete)  
 - Data stored in localStorage  
-
+g
 ---
 
 ## 🛠️ Tech Stack  
